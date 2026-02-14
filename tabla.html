@@ -2,48 +2,180 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Tabla de Datos</title>
+    <title>Calculadora | Estado de Batería Ion-Litio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>Simulador Educativo de Baterías de Ion-Litio</h1>
-    <p>Comprender la energía para usarla responsablemente</p>
-</header>
+ <header class="encabezado-pagina">
+        <h1>Calculadora del Estado de la Batería</h1>
+        <p class="subtitulo">
+            Estimación del estado de carga y salud de baterías de ion-litio
+        </p>
+    </header>
 
 <nav>
     <a href="index.html">Inicio</a>
     <a href="redox.html">Reacciones Redox</a>
     <a href="litio.html">Baterías de Litio</a>
-    <a href="tabla.html">Tabla</a>
+    <a href="tabla.html">Calculadora</a>
 </nav>
+ 
+<section>
+    <h2>Calculadora del estado de una batería de ion-litio</h2>
 
-<!-- La verdad no se bien que poner aquí, de que se supone que es lo que va a hacer los cálculos jaja-->
+    <p>
+        Esta calculadora permite estimar el <strong>estado de carga</strong> y el
+        <strong>estado de salud</strong> de una batería de ion-litio a partir de su
+        capacidad nominal y el número de ciclos de carga. El cálculo se basa en un
+        modelo teórico simplificado ampliamente utilizado con fines educativos.
+    </p>
+
+    <!-- imagen -->
+    <div class="image-placeholder">
+        <img src="calculadora-bateria.png" alt="Calculadora de estado de batería">
+    </div>
+</section>
+
+<hr>
 
 <section>
-    <h2>Tabla de registro</h2>
+    <h2>Ingreso de datos</h2>
 
-    <table>
-        <tr>
-            <th>Dispositivo</th>
-            <th>% Batería</th>
-            <th>Ciclos</th>
-            <th>Estado</th>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </table>
+    <div class="calculator-box">
+        <label for="capNominal">Capacidad nominal de la batería (mAh):</label>
+        <input type="number" id="capNominal" placeholder="Ejemplo: 3000">
+
+        <label for="ciclos">Número de ciclos de carga:</label>
+        <input type="number" id="ciclos" placeholder="Ejemplo: 250">
+
+        <button onclick="calcularBateria()">Calcular estado de la batería</button>
+
+        <div id="resultado" class="resultado"></div>
+    </div>
+</section>
+
+<hr>
+
+<section>
+    <h2>Fundamento del cálculo</h2>
+
+    <p>
+        El cálculo se basa en el comportamiento típico de las baterías de ion-litio,
+        donde se observa que después de aproximadamente <strong>500 ciclos completos</strong>
+        la batería conserva cerca del <strong>80&nbsp;% de su capacidad original</strong>.
+        Esta pérdida se debe principalmente a reacciones redox secundarias no reversibles
+        y al desgaste físico de los electrodos.
+    </p>
+
+    <p>
+        Para fines educativos, se asume una <strong>degradación aproximadamente lineal</strong>
+        de la capacidad con respecto al número de ciclos, lo cual permite estimar la
+        capacidad restante sin requerir instrumentación especializada.
+    </p>
+
+    <p><strong>Fórmulas utilizadas:</strong></p>
+
+    <ul>
+        <li>
+            Capacidad restante (%):
+            <br>
+            <strong>Capacidad (%) = 100 − (Ciclos / 500 × 20)</strong>
+        </li>
+        <li>
+            Capacidad actual:
+            <br>
+            <strong>Q<sub>actual</sub> = Q<sub>nominal</sub> × Capacidad (%) / 100</strong>
+        </li>
+    </ul>
+
+    <!-- imagen -->
+    <div class="image-placeholder">
+        <img src="modelo-calculo.png" alt="Modelo de cálculo de degradación de batería">
+    </div>
+</section>
+
+<hr>
+
+<section>
+    <h2>Interpretación del resultado</h2>
+
+    <ul>
+        <li><strong>≥ 90 %:</strong> Estado excelente</li>
+        <li><strong>75–89 %:</strong> Buen estado</li>
+        <li><strong>60–74 %:</strong> Estado aceptable</li>
+        <li><strong>&lt; 60 %:</strong> Batería deteriorada, se recomienda reemplazo</li>
+    </ul>
+</section>
+
+<hr>
+
+<section>
+    <h2>Fuentes del modelo de cálculo</h2>
+
+    <p>
+        El modelo utilizado en esta calculadora se fundamenta en literatura científica
+        y técnica sobre el envejecimiento de baterías de ion-litio, así como en criterios
+        comúnmente empleados por fabricantes y estudios académicos.
+    </p>
+
+    <ul class="sources">
+        <li>
+            Castro Díaz, I. A., & Wanton Suárez, I. R. (2023). <em>Baterías de iones de litio:
+            estructura, funcionamiento, fallas y sus causas</em>. Seguridad y Saber, 2(2), 23–28.
+        </li>
+        <li>
+            Quintero, V. (2021). <em>Baterías de Ion Litio: características y aplicaciones</em>.
+            I+D Tecnológico, 17(1), 14–22.
+        </li>
+        <li>
+            Pico, H., Pazmiño, I., & Ponce, B. (2021). <em>Análisis de los factores que intervienen
+            en el envejecimiento prematuro de las baterías de ion-litio</em>. Revista Técnica Energía,
+            17(2), 83–91.
+        </li>
+        <li>
+            Goodenough, J. B., & Park, K. S. (2013). <em>The Li-ion rechargeable battery: A perspective</em>.
+            Journal of the American Chemical Society, 135(4), 1167–1176.
+        </li>
+    </ul>
 </section>
 
 <footer>
-    <p>Proyecto educativo | Baterías de Ion-Litio</p>
+    <p>Proyecto educativo | Simulador de baterías de ion-litio</p>
 </footer>
+
+<script>
+function calcularBateria() {
+    const nominal = parseFloat(document.getElementById("capNominal").value);
+    const ciclos = parseFloat(document.getElementById("ciclos").value);
+    const resultado = document.getElementById("resultado");
+
+    if (isNaN(nominal) || isNaN(ciclos) || nominal <= 0 || ciclos < 0) {
+        resultado.innerHTML = "<p class='error'>Ingresa valores válidos.</p>";
+        return;
+    }
+
+    const perdidaPorcentaje = (ciclos / 500) * 20;
+    const capacidadRestante = Math.max(100 - perdidaPorcentaje, 0);
+    const capacidadActual = nominal * (capacidadRestante / 100);
+    const perdidaMah = nominal - capacidadActual;
+
+    let estado = "";
+    if (capacidadRestante >= 90) estado = "Excelente";
+    else if (capacidadRestante >= 75) estado = "Buena";
+    else if (capacidadRestante >= 60) estado = "Aceptable";
+    else estado = "Deteriorada";
+
+    resultado.innerHTML = `
+        <h3>Resultado de la estimación</h3>
+        <p><strong>Capacidad restante:</strong> ${capacidadRestante.toFixed(1)} %</p>
+        <p><strong>Capacidad actual estimada:</strong> ${capacidadActual.toFixed(0)} mAh</p>
+        <p><strong>Pérdida estimada:</strong> ${perdidaMah.toFixed(0)} mAh</p>
+        <p><strong>Estado de la batería:</strong> ${estado}</p>
+    `;
+}
+</script>
 
 </body>
 </html>

@@ -172,3 +172,154 @@ footer {
     margin-bottom: 12px;
     line-height: 1.6;
 }
+.fuentes-lista {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.fuentes-lista li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.fuentes-lista a {
+    color: #2a6db0;
+    text-decoration: none;
+}
+
+.fuentes-lista a:hover {
+    text-decoration: underline;
+}
+/* ============================= */
+/* CALCULADORA DE BATERÍA */
+/* ============================= */
+
+.calculator-box {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 25px;
+    background: #f4f6f5;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.calculator-box label {
+    font-weight: 500;
+    color: #2f3e46;
+}
+
+.calculator-box input {
+    padding: 10px 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #bfc7c5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.calculator-box input:focus {
+    outline: none;
+    border-color: #40916c;
+    box-shadow: 0 0 0 2px rgba(64, 145, 108, 0.2);
+}
+
+.calculator-box button {
+    margin-top: 10px;
+    padding: 12px;
+    background-color: #40916c;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.calculator-box button:hover {
+    background-color: #2d6a4f;
+}
+
+/* RESULTADOS */
+
+.resultado {
+    margin-top: 20px;
+    padding: 18px;
+    background: #ffffff;
+    border-left: 6px solid #40916c;
+    border-radius: 8px;
+    line-height: 1.6;
+}
+
+.resultado h3 {
+    margin-top: 0;
+    color: #1b4332;
+}
+
+.resultado p {
+    margin: 6px 0;
+}
+
+/* MENSAJES DE ERROR */
+
+.error {
+    color: #b00020;
+    font-weight: 500;
+}
+
+/* ============================= */
+/* IMÁGENES DE APOYO */
+/* ============================= */
+
+.image-placeholder {
+    margin: 25px 0;
+    padding: 18px;
+    border: 2px dashed #95d5b2;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #edf7f2;
+    color: #52796f;
+    font-style: italic;
+}
+
+/* ============================= */
+/* FUENTES */
+/* ============================= */
+
+.sources {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.sources li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* ============================= */
+/* FORMATO GENERAL DE IMÁGENES */
+/* ============================= */
+
+/* ============================= */
+/* FORMATO GENERAL DE IMÁGENES */
+/* ============================= */
+
+img {
+    display: block;
+    margin: 25px auto;
+    max-width: 65%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+section img {
+    max-width: 60%;
+}
+
+.image-placeholder img {
+    max-width: 55%;
+}

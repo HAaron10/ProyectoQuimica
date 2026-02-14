@@ -2,33 +2,395 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Reacciones Redox | Baterías</title>
+    <title>Reacciones Redox</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>Simulador Educativo de Baterías de Ion-Litio</h1>
-    <p>Comprender la energía para usarla responsablemente</p>
+    <h1>Reacciones Redox</h1>
+    <p>La base química de la energía, la corrosión y las baterías</p>
 </header>
 
 <nav>
     <a href="index.html">Inicio</a>
     <a href="redox.html">Reacciones Redox</a>
     <a href="litio.html">Baterías de Litio</a>
-    <a href="tabla.html">Tabla</a>
+    <a href="tabla.html">Calculadora</a>
 </nav>
 
 <section>
-    <h2>Reacciones Redox</h2>
-    <div class="placeholder">
-        <!-- Explicacion de las reacciones redox-->
+    <h2>Naturaleza química de las reacciones redox</h2>
+
+    <div class="image-space">
+        <!-- Imagen -->
+         <img src="oxreduc.jpg" alt="oxidoReduc">
     </div>
+
+    <p>
+        Las reacciones de oxidación-reducción, comúnmente conocidas como
+        <strong>reacciones redox</strong>, son procesos químicos fundamentales en los
+        que ocurre una transferencia neta de electrones entre diferentes especies químicas.
+        Este tipo de reacciones está presente en una gran variedad de fenómenos naturales
+        y tecnológicos que forman parte de la vida cotidiana.
+    </p>
+
+    <p>
+        Procesos como la respiración celular, la corrosión de los metales,
+        la fotosíntesis y la generación de corriente eléctrica en baterías y pilas
+        funcionan gracias a reacciones redox. Desde el punto de vista energético,
+        estas reacciones permiten la conversión de energía química en energía eléctrica
+        o térmica.
+    </p>
+
+    <p>
+        Científicamente, una reacción redox se caracteriza por tres aspectos clave:
+    </p>
+
+    <ul>
+        <li>Cambio en el estado de oxidación de los elementos.</li>
+        <li>Transferencia de carga eléctrica mediante electrones.</li>
+        <li>Transformación de energía química en otras formas de energía.</li>
+    </ul>
+</section>
+
+<hr>
+
+<section>
+    <h2>Oxidación y reducción</h2>
+
+    <div class="image-space">
+        <!-- Imagen -->
+         <img src="ganper.jpg" alt="electrones">
+    </div>
+
+    <h3>Oxidación</h3>
+    <p>
+        La oxidación es el proceso químico en el cual una especie pierde electrones.
+        Como consecuencia de esta pérdida, su número o estado de oxidación aumenta.
+    </p>
+
+    <p class="formula">
+        A → A⁺ + e⁻
+    </p>
+
+    <h3>Reducción</h3>
+    <p>
+        La reducción ocurre cuando una especie química gana electrones.
+        Este proceso provoca una disminución en su número de oxidación.
+    </p>
+
+    <p class="formula">
+        B + e⁻ → B⁻
+    </p>
+
+    <p>
+        Es importante destacar que la oxidación y la reducción siempre ocurren de manera simultánea.
+        No puede existir una sin la otra, ya que los electrones que pierde una especie
+        deben ser ganados por otra.
+    </p>
+</section>
+
+<hr>
+
+<section>
+    <h2>Agente oxidante y agente reductor</h2>
+
+    <div class="image-space">
+        <!-- Imagen -->
+         <img src="interaccion.jpg" alt="interaccion">
+    </div>
+
+    <p>
+        Dentro de una reacción redox, las sustancias involucradas desempeñan roles específicos
+        que permiten identificar el sentido de la transferencia electrónica.
+    </p>
+
+    <ul>
+        <li>
+            <strong>Agente oxidante:</strong>
+            Es la sustancia que acepta electrones. Al ganar electrones, el agente oxidante se reduce.
+        </li>
+        <li>
+            <strong>Agente reductor:</strong>
+            Es la sustancia que dona electrones. Al perder electrones, el agente reductor se oxida.
+        </li>
+    </ul>
+
+    <p>
+        Estas definiciones son esenciales para el análisis cuantitativo de las reacciones redox,
+        ya que permiten realizar cálculos electroquímicos y comprender el funcionamiento
+        de dispositivos como las baterías.
+    </p>
+</section>
+
+<hr>
+
+<section>
+    <h2>Estado de oxidación y reglas de asignación</h2>
+
+    <div class="image-space">
+        <!-- Imagen -->
+         <img src="estados.jpg" alt="estados">
+    </div>
+
+    <p>
+        El estado de oxidación es un número convencional que representa la carga que
+        tendría un átomo si los electrones de sus enlaces fueran asignados completamente
+        al átomo más electronegativo.
+    </p>
+
+    <p>
+        Para determinar correctamente estos valores, se siguen reglas específicas:
+    </p>
+
+    <ul>
+        <li>Los elementos en estado libre tienen número de oxidación cero.</li>
+        <li>El hidrógeno generalmente tiene +1, excepto en hidruros metálicos donde es −1.</li>
+        <li>El oxígeno usualmente tiene −2, excepto en peróxidos donde es −1.</li>
+        <li>Los metales presentan estados de oxidación positivos en compuestos iónicos.</li>
+        <li>En compuestos covalentes, el estado negativo se asigna al átomo más electronegativo.</li>
+    </ul>
+</section>
+
+<hr>
+
+<section>
+    <h2>Estequiometría y balanceo por el método redox</h2>
+
+    <p>
+        El balanceo de reacciones redox se fundamenta en la
+        <strong>Ley de la conservación de la materia</strong>,
+        la cual establece que la masa y la carga deben conservarse durante una reacción química.
+    </p>
+
+    <h3>Balanceo de masa y carga</h3>
+    <p>
+        Para lograrlo, se separa la reacción en dos semiecuaciones:
+        una de oxidación y otra de reducción. En cada una se equilibran
+        los átomos y posteriormente las cargas eléctricas mediante electrones.
+    </p>
+
+    <h3>El cruce de electrones</h3>
+    <p>
+        El número de electrones perdidos debe ser igual al número de electrones ganados.
+        Para ello, se multiplican las semiecuaciones por los factores necesarios
+        hasta igualar la cantidad de electrones.
+    </p>
+
+    <h3>Ajuste final</h3>
+    <p>
+        Una vez sumadas las semiecuaciones y cancelados los electrones,
+        se obtiene la ecuación global balanceada, respetando siempre
+        los subíndices originales de las fórmulas químicas.
+    </p>
+</section>
+
+<hr>
+
+<section>
+    <h2>Ejemplo práctico de balanceo redox</h2>
+
+    <p>
+        Consideremos la reacción:
+    </p>
+
+    <p class="formula">
+        Fe + Cl₂ → FeCl₃
+    </p>
+
+    <p>
+        Al asignar números de oxidación, se observa que el hierro pasa de 0 a +3,
+        por lo que se oxida y actúa como agente reductor. El cloro pasa de 0 a −1,
+        por lo que se reduce y actúa como agente oxidante.
+    </p>
+
+    <p>
+        Tras escribir las semiecuaciones, balancear electrones y sumarlas,
+        se obtiene la ecuación final balanceada:
+    </p>
+
+    <p class="formula">
+        2Fe + 3Cl₂ → 2FeCl₃
+    </p>
+</section>
+
+<hr>
+
+<section>
+    <h2>La batería de ion-litio como un sistema redox reversible</h2>
+
+    <div class="image-space">
+        <!-- Imagen -->
+            <img src="bateria.jpg" alt="bateria">
+    </div>
+
+    <p>
+        Una batería de ion-litio puede entenderse como un sistema redox reversible altamente
+        controlado. En condiciones ideales, la energía se almacena y se libera mediante
+        reacciones de oxidación y reducción que pueden invertirse múltiples veces sin
+        modificar la estructura química fundamental del sistema.
+    </p>
+
+    <p>
+        Durante el proceso de <strong>carga</strong>, el sistema es forzado externamente
+        a mover electrones desde el cátodo hacia el ánodo. En cambio, durante la
+        <strong>descarga</strong>, los electrones fluyen de manera espontánea desde el ánodo
+        hacia el cátodo, generando corriente eléctrica útil para el funcionamiento del dispositivo.
+    </p>
+
+    <h3>Procesos redox en cada electrodo</h3>
+
+    <p>
+        En el <strong>ánodo</strong> ocurre un proceso de oxidación, en el cual el litio
+        pierde un electrón:
+    </p>
+
+    <p class="formula">
+        Li → Li⁺ + e⁻
+    </p>
+
+    <p>
+        En el <strong>cátodo</strong>, el proceso complementario es la reducción. El óxido
+        metálico del cátodo acepta el electrón y el ion de litio, completando así la reacción redox.
+    </p>
+</section>
+
+<hr>
+
+<section>
+    <h2>El desgaste de la batería como un problema estequiométrico</h2>
+
+    <div class="image-space">
+        <!-- imagen -->
+            <img src="degradacion.jpg" alt="degradacion">
+    </div>
+
+    <p>
+        El porcentaje de batería que se muestra en la pantalla de un dispositivo,
+        conocido como <strong>Estado de Carga (SoC)</strong>, se basa en una contabilidad
+        electrónica. El sistema estima cuántos electrones deberían estar disponibles
+        considerando la cantidad original de litio presente en la batería.
+    </p>
+
+    <p>
+        Sin embargo, con el uso continuo, la estequiometría ideal de las reacciones redox
+        deja de cumplirse de manera perfecta. Esto ocurre principalmente por dos fenómenos
+        que afectan directamente la cantidad de electrones disponibles para el transporte
+        de energía.
+    </p>
+
+    <h3>Pérdida de inventario de litio (LLI)</h3>
+
+    <p>
+        La <strong>Pérdida de Inventario de Litio (LLI)</strong> ocurre debido a reacciones
+        redox secundarias no deseadas. Parte de los iones de litio se oxidan de forma
+        permanente y pasan a formar parte de la capa conocida como
+        <strong>SEI (Solid Electrolyte Interphase)</strong>, una especie de “sarro químico”
+        que se forma en el ánodo.
+    </p>
+
+    <p>
+        Estos iones quedan atrapados y ya no pueden desplazarse entre los electrodos,
+        lo que reduce la cantidad efectiva de carga que la batería puede transferir.
+    </p>
+
+    <h3>Pérdida de material activo (LAM)</h3>
+
+    <p>
+        La <strong>Pérdida de Material Activo (LAM)</strong> está relacionada con el desgaste
+        físico de los electrodos. El constante flujo de iones provoca microfracturas y
+        deformaciones en la estructura del material, disminuyendo el número de sitios
+        disponibles donde el litio puede alojarse y participar en la reacción redox.
+    </p>
+
+    <p>
+        Como resultado, aunque el litio esté presente, ya no puede reaccionar de manera
+        eficiente, lo que reduce la capacidad total de la batería.
+    </p>
+</section>
+
+<hr>
+
+<section>
+    <h2>Cálculo del estado de salud (SoH) de la batería</h2>
+
+    <div class="image-space">
+        <!-- imagen -->
+            <img src="soh.jpg" alt="soh">
+    </div>
+
+    <p>
+        Cuando un dispositivo indica que su batería tiene, por ejemplo, un
+        <strong>80 % de capacidad máxima</strong>, está realizando un cálculo basado en
+        principios de estequiometría redox comparativa.
+    </p>
+
+    <p>
+        El <strong>Estado de Salud (SoH)</strong> representa la relación entre la carga
+        eléctrica que la batería puede transferir actualmente y la carga que podía
+        transferir cuando era nueva.
+    </p>
+
+    <p class="formula">
+        SoH (%) = (Q<sub>actual</sub> / Q<sub>nominal</sub>) × 100
+    </p>
+
+    <p>
+        Donde <strong>Q<sub>actual</sub></strong> corresponde a la carga total que los
+        electrones pueden transferir antes de que el voltaje caiga al límite de seguridad,
+        y <strong>Q<sub>nominal</sub></strong> es la carga original del sistema.
+    </p>
+
+    <p>
+        Si el sistema detecta que circulan menos electrones debido a la pérdida de litio
+        o al desgaste del material activo, el algoritmo reduce el valor del SoH, reflejando
+        así la degradación electroquímica de la batería.
+    </p>
+</section>
+<section id="redox-fuentes">
+    <h2>Fuentes</h2>
+
+    <ul>
+        <li>
+            Chang, R., & Goldsby, K. A. (2017).
+            <em>Química</em> (12ª ed.). McGraw-Hill.
+            — Fundamentos de estequiometría y celdas galvánicas.
+        </li>
+
+        <li>
+            Goodenough, J. B. (2013).
+            <em>The Li-ion rechargeable battery: A perspective</em>.
+            Journal of the American Chemical Society.
+            — Base química del funcionamiento de las baterías de ion-litio.
+        </li>
+
+        <li>
+            Barré, A., et al. (2013).
+            <em>A review on lithium-ion battery ageing mechanisms</em>.
+            Journal of Power Sources.
+            — Referencia técnica sobre la pérdida de capacidad.
+        </li>
+
+        <li>
+            Barré, A., Deguilhem, B., Grolleau, S., Gérard, M., Suard, F., & Riu, D. (2013).
+            <em>A review on lithium-ion battery ageing mechanisms and estimations for automotive applications</em>.
+            Journal of Power Sources, 241, 680–689.
+            https://doi.org/10.1016/j.jpowsour.2013.05.040
+        </li>
+
+        <li>
+            Vetter, J., Novák, P., Wagner, M. R., Veit, C., Möller, K. C., Besenhard, J. O., et al. (2005).
+            <em>Ageing mechanisms in lithium-ion batteries</em>.
+            Journal of Power Sources, 147(1–2), 269–281.
+            https://doi.org/10.1016/j.jpowsour.2005.01.006
+        </li>
+    </ul>
 </section>
 
 <footer>
-    <p>Proyecto educativo | Baterías de Ion-Litio</p>
+    <p>Proyecto educativo | Reacciones Redox</p>
 </footer>
 
 </body>
