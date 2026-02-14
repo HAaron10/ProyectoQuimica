@@ -1,115 +1,174 @@
 /* ===== CONFIGURACIÓN GENERAL ===== */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
 }
 
+
 body {
-    background: linear-gradient(135deg, #e9f5f2, #f1f3f2);
-    color: #2f3e46;
-    line-height: 1.6;
+   background: linear-gradient(135deg, #e9f5f2, #f1f3f2);
+   color: #2f3e46;
+   line-height: 1.6;
 }
+
 
 /* ===== HEADER ===== */
 header {
-    background: linear-gradient(120deg, #2f5d50, #52796f);
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+   background: linear-gradient(120deg, #2f5d50, #52796f);
+   color: white;
+   text-align: center;
+   padding: 40px 20px;
+   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
+
 
 header h1 {
-    font-size: 2.2rem;
-    font-weight: 600;
+   font-size: 2.2rem;
+   font-weight: 600;
 }
 
+
 header p {
-    margin-top: 10px;
-    font-size: 1.1rem;
-    opacity: 0.9;
+   margin-top: 10px;
+   font-size: 1.1rem;
+   opacity: 0.9;
 }
+
 
 /* ===== NAV ===== */
 nav {
-    background-color: #354f52;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 15px;
+   background-color: #354f52;
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+   padding: 15px;
 }
+
 
 nav a {
-    color: #e9f5f2;
-    text-decoration: none;
-    font-weight: 500;
-    padding: 8px 16px;
-    border-radius: 20px;
-    transition: all 0.3s ease;
+   color: #e9f5f2;
+   text-decoration: none;
+   font-weight: 500;
+   padding: 8px 16px;
+   border-radius: 20px;
+   transition: all 0.3s ease;
 }
 
+
 nav a:hover {
-    background-color: #84a98c;
-    color: #1b4332;
+   background-color: #84a98c;
+   color: #1b4332;
 }
+
 
 /* ===== CONTENIDO ===== */
 section {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 30px;
-    background-color: #ffffff;
-    border-radius: 18px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+   max-width: 1000px;
+   margin: 40px auto;
+   padding: 30px;
+   background-color: #ffffff;
+   border-radius: 18px;
+   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
+
 section h2 {
-    color: #2f5d50;
-    margin-bottom: 15px;
-    font-size: 1.6rem;
-    border-left: 6px solid #84a98c;
-    padding-left: 12px;
+   color: #2f5d50;
+   margin-bottom: 15px;
+   font-size: 1.6rem;
+   border-left: 6px solid #84a98c;
+   padding-left: 12px;
 }
+
 
 /* ===== PLACEHOLDER ===== */
 .placeholder {
-    margin-top: 20px;
-    padding: 25px;
-    border: 2px dashed #b7c4c0;
-    border-radius: 14px;
-    background-color: #f7f9f8;
-    color: #6c757d;
-    text-align: center;
-    font-style: italic;
+   margin-top: 20px;
+   padding: 25px;
+   border: 2px dashed #b7c4c0;
+   border-radius: 14px;
+   background-color: #f7f9f8;
+   color: #6c757d;
+   text-align: center;
+   font-style: italic;
 }
+
 
 /* ===== TABLA ===== */
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+   width: 100%;
+   border-collapse: collapse;
+   margin-top: 20px;
 }
+
 
 table th {
-    background-color: #52796f;
-    color: white;
-    padding: 12px;
+   background-color: #52796f;
+   color: white;
+   padding: 12px;
 }
 
+
 table td {
-    border: 1px solid #cad2c5;
-    padding: 12px;
-    height: 40px;
+   border: 1px solid #cad2c5;
+   padding: 12px;
+   height: 40px;
 }
+
 
 /* ===== FOOTER ===== */
 footer {
-    background-color: #2f3e46;
-    color: #d8f3dc;
-    text-align: center;
-    padding: 20px;
-    font-size: 0.9rem;
-    margin-top: 50px;
+   background-color: #2f3e46;
+   color: #d8f3dc;
+   text-align: center;
+   padding: 20px;
+   font-size: 0.9rem;
+   margin-top: 50px;
+}
+/* ====== IMÁGENES Y BLOQUES VISUALES ====== */
+
+.hero-image {
+    height: 260px;
+    margin: 30px auto;
+    background-color: #e6f2ee;
+    border-radius: 16px;
+}
+
+.content-with-image {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.content-with-image.reverse {
+    flex-direction: row-reverse;
+}
+
+.content-with-image .text {
+    flex: 1;
+}
+
+.content-with-image .image {
+    flex: 1;
+    height: 220px;
+    background-color: #eef4f1;
+    border-radius: 14px;
+}
+
+.image-divider {
+    height: 200px;
+    margin: 50px auto;
+    background-color: #eaf3ef;
+    border-radius: 16px;
+}
+
+.intro-text {
+    margin-bottom: 18px;
+}
+
+.concept-list li {
+    margin-bottom: 12px;
+    line-height: 1.6;
 }

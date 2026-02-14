@@ -15,11 +15,16 @@
 
 <nav>
     <a href="index.html">Inicio</a>
-    <a href="informacion.html">Información</a>
     <a href="redox.html">Reacciones Redox</a>
     <a href="litio.html">Baterías de Litio</a>
     <a href="tabla.html">Tabla</a>
 </nav>
+
+<!-- IMAGEN PRINCIPAL -->
+<div class="image-container">
+    <!-- Imagen sugerida: batería de ion-litio moderna / esquema general -->
+    <img src="imagenes/litio-principal.jpg" alt="Batería de ion-litio">
+</div>
 
 <section>
     <h2>¿Qué es una batería de iones de litio?</h2>
@@ -32,6 +37,12 @@
         alta eficiencia energética en un tamaño reducido.
     </p>
 
+    <!-- IMAGEN DE FUNCIONAMIENTO -->
+    <div class="image-container">
+        <!-- Imagen sugerida: esquema carga/descarga de batería -->
+        <img src="imagenes/funcionamiento-litio.png" alt="Funcionamiento batería de ion-litio">
+    </div>
+
     <h3>Estructura básica</h3>
     <p>Las baterías de ion-litio están formadas por los siguientes componentes:</p>
     <ul>
@@ -40,6 +51,12 @@
         <li><strong>Electrolito:</strong> Medio que permite el movimiento de los iones de litio.</li>
         <li><strong>Separador:</strong> Evita el contacto directo entre ánodo y cátodo, previniendo cortocircuitos.</li>
     </ul>
+
+<!-- IMAGEN DE ESTRUCTURA INTERNA -->
+    <div class="image-container">
+        <!-- Imagen sugerida: partes internas de una batería de litio -->
+        <img src="imagenes/estructura-bateria.png" alt="Estructura interna batería de ion-litio">
+    </div>
 
     <p>
         Durante la <strong>descarga</strong>, los electrones y los iones de litio se desplazan
@@ -51,42 +68,95 @@
 <hr>
 
 <section>
-    <p>
+    <h2>Conceptos fundamentales para el análisis de baterías de ion-litio</h2>
+
+    <p class="intro-text">
         Para comprender los procesos químicos que suceden dentro de estas baterías,
         es necesario primero conocer algunos conceptos básicos de estas, con los cuales
         los fabricantes nos indican varias de las características de las mismas:
     </p>
 
-    <ul>
-        <li><strong>Capacidad:</strong> Hace referencia a la cantidad de energía eléctrica que puede suministrar una batería en un intervalo de tiempo específico, esta media usualmente se da en amperios-horas . </li>
+<!-- IMAGEN CONCEPTUAL -->
+    <div class="image-container">
+        <!-- Imagen sugerida: íconos o diagrama de conceptos eléctricos -->
+        <img src="imagenes/conceptos-bateria.png" alt="Conceptos básicos de baterías">
+    </div>
 
-        <li><strong>Ciclo:</strong> Se define como el proceso de descargar una batería que ha sido cargada completamente. </li>
+    <ul class="concept-list">
+        <li>
+            <strong>Capacidad:</strong>
+            Hace referencia a la cantidad de energía eléctrica que puede suministrar una batería en un intervalo de tiempo específico, esta media usualmente se da en amperios-horas .
+        </li>
 
-        <li><strong>Degradación:</strong> Disminución gradual de la capacidad de almacenamiento de energía de una batería </li>
+        <li>
+            <strong>Ciclo:</strong>
+            Se define como el proceso de descargar una batería que ha sido cargada completamente.
+        </li>
 
-        <li><strong>Electrodo negativo:</strong> Elemento del sistema donde un componente o elemento químico se somete a una reacción de oxidación. </li>
+        <li>
+            <strong>Degradación:</strong>
+            Disminución gradual de la capacidad de almacenamiento de energía de una batería.
+        </li>
 
-        <li><strong>Electrodo positivo:</strong> Elemento en el sistema en donde un componente o elemento químico se somete a una reacción de reducción. </li>
+        <li>
+            <strong>Electrodo negativo:</strong>
+            Elemento del sistema donde un componente o elemento químico se somete a una reacción de oxidación.
+        </li>
 
-        <li><strong>Electrolito:</strong> Solución acuosa o no acuosa de sales, bases o ácidos en donde se permite el flujo de electrones. </li>
+        <li>
+            <strong>Electrodo positivo:</strong>
+            Elemento en el sistema en donde un componente o elemento químico se somete a una reacción de reducción.
+        </li>
 
-        <li><strong>Estado de carga (SOC):</strong> En términos generales está definido como la energía disponible en la batería </li>
+        <li>
+            <strong>Electrolito:</strong>
+            Solución acuosa o no acuosa de sales, bases o ácidos en donde se permite el flujo de electrones.
+        </li>
 
-        <li><strong>Estado de salud (SOH):</strong> Hace referencia al porcentaje del nivel de degradación que ha sufrido la batería </li>
+        <li>
+            <strong>Estado de carga (SOC):</strong>
+            En términos generales está definido como la energía disponible en la batería.
+        </li>
 
-        <li><strong>Impedancia interna:</strong> Medida de oposición al paso de corriente en un circuito cuando se aplica voltaje </li>
+        <li>
+            <strong>Estado de salud (SOH):</strong>
+            Hace referencia al porcentaje del nivel de degradación que ha sufrido la batería.
+        </li>
 
-        <li><strong>Proceso de carga:</strong> Es definido como el proceso inverso, en donde la oxidación ocurre en el electrodo positivo, y la reducción en el electrodo negativo (el sistema actúa como una celda electrolítica) </li>
+        <li>
+            <strong>Impedancia interna:</strong>
+            Medida de oposición al paso de corriente en un circuito cuando se aplica voltaje.
+        </li>
 
-        <li><strong>Proceso de descarga:</strong> Es definido como el flujo de electrones desde el ánodo (oxidación) hasta el cátodo (reducción) por medio de una carga externa </li>
+        <li>
+            <strong>Proceso de carga:</strong>
+            Es definido como el proceso inverso, en donde la oxidación ocurre en el electrodo positivo, y la reducción en el electrodo negativo (el sistema actúa como una celda electrolítica).
+        </li>
 
-        <li><strong>Profundidad de descarga (DoD) :</strong> Se define como el porcentaje de cuanta batería se ha usado </li>
+        <li>
+            <strong>Proceso de descarga:</strong>
+            Es definido como el flujo de electrones desde el ánodo (oxidación) hasta el cátodo (reducción) por medio de una carga externa.
+        </li>
 
-        <li><strong>Vida útil remanente:</strong> Se define como la capacidad máxima de energía remanente en la batería </li>
+        <li>
+            <strong>Profundidad de descarga (DoD):</strong>
+            Se define como el porcentaje de cuanta batería se ha usado.
+        </li>
 
-        <li><strong>Voltaje nominal:</strong> Se define como el voltaje de operación del sistema  </li>
+        <li>
+            <strong>Vida útil remanente:</strong>
+            Se define como la capacidad máxima de energía remanente en la batería.
+        </li>
 
-        <li><strong>Voltaje de corte de descarga:</strong> Se define como el voltaje mínimo que puede alcanzar una batería durante el proceso de descarga, es empleado como medida de protección para evitar daños irreversibles en la batería </li>
+        <li>
+            <strong>Voltaje nominal:</strong>
+            Se define como el voltaje de operación del sistema.
+        </li>
+
+        <li>
+            <strong>Voltaje de corte de descarga:</strong>
+            Se define como el voltaje mínimo que puede alcanzar una batería durante el proceso de descarga, es empleado como medida de protección para evitar daños irreversibles en la batería.
+        </li>
     </ul>
 </section>
 
@@ -95,22 +165,21 @@
 
     <p>
         Este tipo de baterías nos brindan numerosas ventajas a diferencia de un celda galvánica
-        por sí sola, sobre aquellas ventajas ya que....
-    </p>
-
-    <p>
-        tienen una mayor densidad de energía, una mayor eficiencia  y  un  ciclo  de  vida  más  largo. 
+        por sí sola, sobre aquellas ventajas ya quen tienen una mayor densidad de energía, una mayor eficiencia  y  un  ciclo  de  vida  más  largo. 
         Las  baterías de plomo ácido permiten 1 500 ciclos de vida, mientras que la tecnología
         de las baterías de litio ofrece una duración de hasta 2 500 ciclos.
-        Pero, la desventaja de las baterías de iones de litio es su riesgo potencial
-        de explosiones e incendios, que pueden suceder si se sobrecargan o se cargan
-        muy rápido con demasiada  corriente. (p. 25)
     </p>
 </section>
 
 <hr>
 <section>
     <h2>Comparación con pilas primarias</h2>
+
+     <!-- IMAGEN COMPARATIVA -->
+    <div class="image-container">
+        <!-- Imagen sugerida: comparación visual de tipos de baterías -->
+        <img src="imagenes/comparacion-baterias.png" alt="Comparación de baterías">
+    </div>
 
     <p>
         Existen dos tipos de clasificaciones para las baterias, las primarias y las secundarias. 
@@ -127,13 +196,12 @@
         Ejemplos de baterias primarias son zinc-carbono, alcalinas  (zinc/dióxido  de manganeso), 
         zinc/óxido  de plata, zinc-aire y  litio, y ejemplos de baterias secundarias:
         ácido  plomo, níquel-cadmio (Ni-Cd),  níquel-metal  hidruro  (Ni-MH),
-        ion  de  litio (Li-Ion) y  polímero  de  litio (LIPo)
+        ion  de  litio (Li-Ion) y  polímero  de  litio (LIPo).
     </p>
 
     <p>
         La diferencia más notable entre ambas son el tipo de reacciones que suceden dentro de estas celdas,
-        pues en las secundarias son reversibles y en las primarias no, sin embargo también existen
-        otras diferencias que valen la pena mencionar:
+        pues en las secundarias son reversibles y en las primarias no.
     </p>
 </section>
 
@@ -184,10 +252,10 @@
             </tr>
             <tr>
                 <td><strong>Aplicaciones</strong></td>
-                <td>Celulares, laptops, autos eléctricos</td>
-                <td>Juguetes, controles</td>
-                <td>Relojes, controles</td>
-                <td>Dispositivos pequeños</td>
+                <td>Dispositivos electrónicos portátiles ( Celulares, tablets, laptops). Vehículos eléctricos. </td>
+                <td>Controles remotos, relojes, linternas, juguetes etc. </td>
+                <td>Controles remotos, relojes, linternas, juguetes etc. </td>
+                <td>Controles remotos, relojes, linternas, juguetes etc. </td>
             </tr>
         </tbody>
     </table>
@@ -195,24 +263,79 @@
 
 <hr>
 <section>
-    <h2>Desventajas de las baterías de iones de litio</h2>
+    <h2>Desventajas y riesgos asociados a las baterías de ion-litio</h2>
 
+    <!-- IMAGEN DE RIESGOS -->
+    <div class="image-container">
+        <!-- Imagen sugerida: batería dañada / advertencia térmica -->
+        <img src="imagenes/riesgos-litio.jpg" alt="Riesgos de baterías de litio">
+    </div>
+
+    <h3>Reactividad del litio y riesgos térmicos</h3>
     <p>
-        Las desventajas de este tipo de celdas recaen en el elemento que las compone, el litio,
-        un metal altamente reactivo “...es su riesgo potencial de explosiones e incendios,
-        que pueden suceder si se sobrecargan o se cargan muy rápido con demasiada  corriente. 
-        Debido  a  ese  riesgo,  debe existir un sistema de circuitos para proteger contra cualquiera 
-        de  estos  eventos”(ese wey se rifo en 0000).
+        Las principales desventajas de las baterías de ion-litio se relacionan directamente
+        con el elemento que las compone: el litio. Este metal se caracteriza por ser altamente
+        reactivo, lo que permite una elevada densidad de energía, pero también implica riesgos
+        importantes.
     </p>
 
     <p>
-        Las baterías de litio pueden presentar problemas los cuales reducen la vida útil de las mismas
-        o incluso las convierten en un peligro por la alta reactividad del elemento que las conforma.
-        Dichos problemas van desde fallas o modificaciones en su forma física debido a caídas o aplastamientos,
-        en su anatomía química al someter a la batería a niveles de corriente y voltaje fuera de los
-        recomendados por el fabricante. Estos son algunos problemas muy comunes en este tipo de sistemas,
-        los cuales reducen su vida útil, aumentando la posibilidad de explosiones y accidentes o la
-        formación de dendritas de litio (cuando se rompe el separador y los electrodos tienen contacto entre sí).
+        Diversos autores señalan que
+        <em>
+            “su principal desventaja es el riesgo potencial de explosiones e incendios, los cuales
+            pueden ocurrir cuando la batería es sobrecargada o cargada a velocidades excesivas con
+            corrientes demasiado altas”
+        </em>
+        (Goodenough &amp; Park, 2013).
+    </p>
+
+    <h3>Sistemas de protección y control electrónico</h3>
+    <p>
+        Debido a este riesgo, es indispensable que las baterías de ion-litio cuenten con sistemas
+        electrónicos de protección, conocidos como <strong>Battery Management Systems (BMS)</strong>.
+        Estos sistemas regulan parámetros críticos como el voltaje, la corriente y la temperatura,
+        evitando condiciones que puedan provocar fallas catastróficas.
+    </p>
+
+    <p>
+        Sin la presencia de estos sistemas de control, el uso cotidiano de baterías de ion-litio
+        representaría un peligro significativo tanto para los usuarios como para los dispositivos
+        en los que se integran.
+    </p>
+
+    <h3>Daños físicos y químicos en la batería</h3>
+    <p>
+        Además de los riesgos térmicos, las baterías de litio pueden presentar problemas que
+        reducen su vida útil o comprometen su seguridad. Entre los más comunes se encuentran
+        las deformaciones físicas ocasionadas por golpes, caídas o aplastamientos.
+    </p>
+
+    <p>
+        Asimismo, someter la batería a niveles de corriente o voltaje fuera de los rangos
+        recomendados por el fabricante puede provocar alteraciones químicas internas que
+        aceleran su degradación y aumentan el riesgo de fallas.
+    </p>
+
+    <h3>Formación de dendritas de litio</h3>
+    <p>
+        Uno de los fenómenos más peligrosos asociados a estas baterías es la
+        <strong>formación de dendritas de litio</strong>, estructuras microscópicas que pueden
+        crecer durante ciclos de carga y descarga inadecuados.
+    </p>
+
+    <p>
+        Cuando estas dendritas perforan el separador interno, los electrodos pueden entrar en
+        contacto directo, provocando cortocircuitos internos. Esta situación incrementa de
+        forma considerable el riesgo de incendios o explosiones
+        <em>(Tarascon &amp; Armand, 2001)</em>.
+    </p>
+
+    <h3>Importancia del uso responsable</h3>
+    <p>
+        En conjunto, estos factores evidencian que, aunque las baterías de ion-litio ofrecen
+        múltiples ventajas tecnológicas, su uso seguro y eficiente depende en gran medida de
+        un manejo adecuado, sistemas de protección eficaces y prácticas responsables por parte
+        de los usuarios.
     </p>
 </section>
 </hr>
